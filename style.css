@@ -1,0 +1,27 @@
+/*css goes here :)*/
+
+body {
+	background-color: #f1f1d9;
+	text-align: center;
+	color: #444;
+}
+
+button {
+	background: none;
+	border-style: none;
+	font-size: 100px;
+	padding: 0 0.5em 0 0.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	padding-top: 80px;
+	font-size: 30px;
+}
+
+#emoji-button {
+	padding-top: 80px;
+}
