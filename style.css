@@ -24,30 +24,30 @@ p {
 
 @media (max-width: 1200px) {
   #emoji-button {
-  -moz-font-size:    100px;
-  -webkit-font-size: 100px;
-  font-size:         100px;
+  -moz-font-size:    3em;
+  -webkit-font-size: 3em;
+  font-size:         3em;
   }
-}
+}3
 @media (max-width: 1000px) {
   #emoji-button{
-  -moz-font-size:    110px;
-  -webkit-font-size: 110px;
-  font-size:         110px;
+  -moz-font-size:    3em;
+  -webkit-font-size: 3em;
+  font-size:         3em;
   }
 }
 @media (max-width: 800px) {
   #emoji-button {
-  -moz-font-size:    200px;
-  -webkit-font-size: 200px;
-  font-size:         200px;
+  -moz-font-size:    4em;
+  -webkit-font-size: 4em;
+  font-size:         4em;
   }
 }
 @media (max-width: 400px) {
   #emoji-button {
-  -moz-font-size:    400px;
-  -webkit-font-size: 400px;
-  font-size:         400px;
+  -moz-font-size:    4em;
+  -webkit-font-size: 4em;
+  font-size:         4em;
   }
 }
 
