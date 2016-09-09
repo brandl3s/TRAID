@@ -44,7 +44,7 @@ header#header.info h2 {
 	color: white !important; 
 }
 
-li.buttons {
+input#saveForm {
 	background-color: #ff0071 !important;
 	color: white !important;
 	-webkit-border-radius: 10px;
