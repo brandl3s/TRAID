@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 
-p {
+p.feel {
 	padding-top: 80px;
 	font-size: 4em;
 }
@@ -29,11 +29,19 @@ p {
 	width:18em;
 }
 
-p.information {
+p#information-intro {
 	font-size: 1.5em;
 	float: left;
 	text-align: left;
-	max-width: 20em;
+	max-width: 15em;
+}
+
+p#information {
+	font-size: 1.5em;
+	float: left;
+	clear: both;
+	text-align: left;
+	max-width: 15em;
 }
 
 /* Wufoo Styling*/
@@ -45,8 +53,7 @@ border-radius: 10px;
 }*/
 
 div#container {
-	float: right;
-	max-width: 800px;
+	max-width: 20em;
 	background-color: #befffa !important;
 }
 
@@ -65,10 +72,7 @@ input#saveForm {
 	color: white !important;
 }
 
-#wufoo-z3jxa1g12hidja {
-	align-content: center;
-	text-align: center;
-}
+
 
 
 /*@media (max-width: 1200px) {
