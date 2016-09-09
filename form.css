@@ -1,0 +1,8 @@
+/*css for Wufoo form :)*/
+
+
+input.text, input.search, textarea.textarea {
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}

@@ -1,4 +1,4 @@
-/*css goes here :)*/
+/*css for web app :)*/
 
 body {
 	background-color: #f1f1d9;
@@ -21,6 +21,11 @@ p {
 	padding-top: 80px;
 	font-size: 4em;
 }
+
+#emoji-button {
+	padding-top: 80px;
+}
+
 
 /*@media (max-width: 1200px) {
   #emoji-button {
@@ -51,7 +56,3 @@ p {
   }
 }*/
 
-#emoji-button {
-	padding-top: 80px;
-	font-family: AppleColorEmoji;
-}
