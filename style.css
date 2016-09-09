@@ -29,6 +29,10 @@ p {
 	width:18em;
 }
 
+p.information {
+	font-size: 14px;
+}
+
 /* Wufoo Styling*/
 
 /*input.text, input.search, textarea.textarea {
