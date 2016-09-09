@@ -43,11 +43,12 @@ div#container {
 
 header#header.info {
 	background-color: #ff0071;
+	display: inline-block;
 }
 
 header#header.info h2 {
 	color: white !important; 
-	display: inline-block;
+	
 }
 
 input#saveForm {
