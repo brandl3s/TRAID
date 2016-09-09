@@ -39,7 +39,7 @@ border-radius: 10px;
 
 div#container {
 	max-width: 800px;
-	background-color: #befffa;
+	background-color: #befffa !important;
 }
 
 header#header.info {
