@@ -9,8 +9,7 @@ body {
 button {
 	background: none;
 	border-style: none;
-	font-size: 100px;
-	padding: 0 0.5em 0 0.5em;
+	padding: 0 2em 0 2em;
 }
 
 a {
@@ -26,11 +25,17 @@ p {
 	padding-top: 80px;
 }
 
-input.text, input.search, textarea.textarea {
+#emoji-button img {
+	width:18em;
+}
+
+/* Wufoo Styling*/
+
+/*input.text, input.search, textarea.textarea {
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
-}
+}*/
 
 div#container {
 	max-width: 800px;
@@ -42,14 +47,12 @@ header#header.info {
 
 header#header.info h2 {
 	color: white !important; 
+	display: inline-block;
 }
 
 input#saveForm {
-	background-color: #ff0071 !important;
+	background-color: #444 !important;
 	color: white !important;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
 }
 
 #wufoo-z3jxa1g12hidja {
