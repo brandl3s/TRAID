@@ -38,6 +38,12 @@ div#container {
 
 header#header.info {
 	background-color: #ff0071;
+	color: white;
+}
+
+input#saveForm {
+	background-color: #ff0071;
+	color: white;
 }
 
 #wufoo-z3jxa1g12hidja {
