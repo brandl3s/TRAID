@@ -55,8 +55,6 @@ border-radius: 10px;
 div#container {
 	max-width: 20em;
 	background-color: #befffa !important;
-	float: right;
-	position: absolute;
 }
 
 header#header.info {
