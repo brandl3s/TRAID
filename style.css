@@ -58,13 +58,10 @@ div#form-page {
 -moz-border-radius: 10px;
 border-radius: 10px;
 }*/
-
-
-div#container {
-	max-width: 20em;
-	background-color: #befffa;
+div#wufoo-z3jxa1g12hidja {
 	float: right;
-}
+	max-width: 20em;
+	background-color: #befffa !important;}
 
 header#header.info {
 	max-width: 20em;
