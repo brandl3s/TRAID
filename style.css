@@ -33,7 +33,7 @@ h1 {
 	font-size: 1.5em;
 	float: left;
 	text-align: left;
-	max-width: 25em;
+	max-width: 300px;
 }
 
 p#information {
@@ -41,7 +41,7 @@ p#information {
 	float: left;
 	clear: left;
 	text-align: left;
-	max-width: 25em;
+	max-width: 300px;
 }
 
 div#form-page {
@@ -65,12 +65,14 @@ div#wufoo-z3jxa1g12hidja {
 	border-radius: 2px;	
 }
 
+
+
 form.wufoo {
 	background-color: #befffa !important;
 }
 
 header#header.info {
-	max-width: 20em;
+	max-width: 100%;
 }
 
 header#header.info h2 {
