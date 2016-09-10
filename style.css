@@ -60,6 +60,7 @@ border-radius: 10px;
 }*/
 div#wufoo-z3jxa1g12hidja {
 	float: right;
+	background-color: #befffa;
 }
 
 div#container {
@@ -68,7 +69,7 @@ div#container {
 }
 
 header#header.info {
-	display: inline-block;
+	max-width: 20em;
 }
 
 header#header.info h2 {
@@ -79,6 +80,9 @@ header#header.info h2 {
 input#saveForm {
 	background-color: #444 !important;
 	color: white !important;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 
