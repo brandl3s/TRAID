@@ -60,8 +60,12 @@ border-radius: 10px;
 }*/
 div#wufoo-z3jxa1g12hidja {
 	float: right;
+	border-radius: 2px;
+}
 
-	background-color: #befffa !important;}
+form.wufoo {
+	background-color: #befffa !important;
+}
 
 header#header.info {
 	max-width: 20em;
@@ -76,6 +80,7 @@ input#saveForm {
 	background-color: #444 !important;
 	color: white !important;
 	font-size: 1em;
+	height: 2em;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
