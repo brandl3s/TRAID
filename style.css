@@ -30,11 +30,20 @@ p.feel {
 }
 
 h1 {
-	font-size: 1.5em;
 	float: left;
 	text-align: left;
 	max-width: 300px;
+	max-height: 200px;
 	margin-top: 0;
+	background-color: #F60071;
+	display: block;
+}
+
+span {
+	color: white;
+	font-size: 1em;
+	line-height: 1.4;
+	padding: 2px 2px 0 2px;
 }
 
 p#information {
@@ -73,8 +82,8 @@ form.wufoo {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	max-height: 550px;
-	max-width: 300px;
+	max-height: 580px;
+	max-width: 400px;
 
 }
 
