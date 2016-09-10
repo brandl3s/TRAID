@@ -19,6 +19,14 @@ a {
 p.feel {
 	padding-top: 80px;
 	font-size: 4em;
+	color: #ffffff;
+}
+
+.feel span {
+	background-color: #F60071;
+	padding: 4px 0;
+	border-left: 20px solid #F60071;
+	border-right: 20px solid #F60071;
 }
 
 #emoji-button {
@@ -26,24 +34,24 @@ p.feel {
 }
 
 #emoji-button img {
-	width:18em;
+	width: 18em;
 }
 
 h1 {
 	float: left;
 	text-align: left;
 	max-width: 300px;
-	max-height: 200px;
 	margin-top: 0;
+	color: #ffffff;
 	background-color: #F60071;
-	display: block;
 }
 
-span {
-	color: white;
+.highlight span {
 	font-size: 1em;
 	line-height: 1.4;
-	padding: 2px 2px 0 2px;
+	padding: 4px 0;
+	border-left: 20px solid #F60071;
+	border-right: 20px solid #F60071;
 }
 
 p#information {
@@ -92,13 +100,13 @@ form.wufoo {
 }
 
 header#header.info h2 {
-	color: white !important; 
+	color: #ffffff !important; 
 	background-color: #ff0071;
 }*/
 
 input#saveForm {
 	background-color: #444 !important;
-	color: white !important;
+	color: #ffffff; !important;
 	font-size: 1em;
 	height: 2em;
 	-webkit-border-radius: 4px;
