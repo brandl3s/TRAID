@@ -34,6 +34,7 @@ h1 {
 	float: left;
 	text-align: left;
 	max-width: 300px;
+	margin-top: 0;
 }
 
 p#information {
@@ -63,14 +64,16 @@ div#wufoo-z3jxa1g12hidja {
 	
 }
 
-
+input.text {
+	margin: 2px;
+}
 
 form.wufoo {
 	background-color: #befffa !important;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	max-height: 500px;
+	max-height: 550px;
 	max-width: 300px;
 
 }
