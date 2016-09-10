@@ -34,6 +34,7 @@ h1 {
 	float: left;
 	text-align: left;
 	max-width: 300px;
+	margin:none !important;
 }
 
 p#information {
@@ -71,14 +72,14 @@ form.wufoo {
 	background-color: #befffa !important;
 }
 
-header#header.info {
+/*header#header.info {
 	max-width: 100%;
 }
 
 header#header.info h2 {
 	color: white !important; 
 	background-color: #ff0071;
-}
+}*/
 
 input#saveForm {
 	background-color: #444 !important;
