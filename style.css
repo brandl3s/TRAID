@@ -15,7 +15,7 @@ a {
 	text-decoration: none;
 }
 
-p.feel {
+p {
 	padding-top: 80px;
 	font-size: 4em;
 	color: #ffffff;
@@ -76,8 +76,8 @@ p.feel {
 border-radius: 10px;
 }*/
 div#wufoo-z3jxa1g12hidja {
-	float: right;
-	
+	position: center;
+	font-size: 4em;
 }
 
 input.text {
@@ -85,7 +85,6 @@ input.text {
 }
 
 form.wufoo {
-	background-color: #befffa !important;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
