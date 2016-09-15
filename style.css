@@ -1,9 +1,8 @@
 /*css for web app :)*/
 
 body {
-	background-color: #f1f1d9;
 	text-align: center;
-	color: #444;
+	color: #000000;
 }
 
 button {
@@ -37,38 +36,38 @@ p.feel {
 	width: 18em;
 }
 
-h1 {
+/*h1 {
 	float: left;
 	text-align: left;
 	max-width: 300px;
 	margin-top: 0;
 	color: #ffffff;
 	background-color: #F60071;
-}
+}*/
 
-.highlight span {
+/*.highlight span {
 	font-size: 1em;
 	line-height: 1.4;
 	padding: 4px 0;
 	border-left: 20px solid #F60071;
 	border-right: 20px solid #F60071;
-}
+}*/
 
-p#information {
+/*p#information {
 	font-size: 1em;
 	float: left;
 	clear: left;
 	text-align: left;
 	max-width: 300px;
-}
+}*/
 
-div#form-page {
+/*div#form-page {
 	max-width: 80em;
 	padding: 4em 15em 0 15em;
 	background-color: #ffffff;
 	display: inline-block;
 }
-
+*/
 /* Wufoo Styling*/
 
 /*input.text, input.search, textarea.textarea {
