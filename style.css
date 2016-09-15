@@ -68,7 +68,7 @@ p {
 }*/
 
 div#wufoo-z3jxa1g12hidja {
-	font-size: 8em;
+	padding-top: 4em;
 }
 
 header#header.info h2 {
@@ -77,6 +77,10 @@ header#header.info h2 {
 
 input.text {
 	margin: 2px;
+}
+
+label#title1.desc {
+	font-size: 8em;
 }
 /*
 form.wufoo {
