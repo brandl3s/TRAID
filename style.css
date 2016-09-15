@@ -63,27 +63,29 @@ p {
 
 /* Wufoo Styling*/
 
-div#form {
-	align-content: center;
+/*div#form {
 	display: inline-block;
-}
+}*/
 
 div#wufoo-z3jxa1g12hidja {
-	font-size: 4em;
-	align-content: center;
+	font-size: 8em;
+}
+
+header#header.info h2 {
+	display: none;
 }
 
 input.text {
 	margin: 2px;
 }
-
+/*
 form.wufoo {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	max-height: 580px;
 	max-width: 800px;
-}
+}*/
 
 input#saveForm {
 	background-color: #000000 !important;
