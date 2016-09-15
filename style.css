@@ -75,9 +75,13 @@ p {
 -moz-border-radius: 10px;
 border-radius: 10px;
 }*/
+div#form {
+	align-content: center;
+}
+
 div#wufoo-z3jxa1g12hidja {
-	position: center;
 	font-size: 4em;
+	align-content: center;
 }
 
 input.text {
@@ -90,7 +94,6 @@ form.wufoo {
 	border-radius: 4px;
 	max-height: 580px;
 	max-width: 400px;
-
 }
 
 /*header#header.info {
