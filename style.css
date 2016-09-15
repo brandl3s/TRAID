@@ -109,7 +109,7 @@ input#saveForm {
 
 
 
-/*@media (max-width: 1200px) {
+@media (max-width: 1200px) {
   #emoji-button {
   -moz-font-size:    3em;
   -webkit-font-size: 3em;
@@ -136,7 +136,7 @@ input#saveForm {
   -webkit-font-size: 4em;
   font-size:         4em;
   }
-}*/
+}
 
 /*  Background Video */
 
