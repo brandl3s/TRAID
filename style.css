@@ -10,7 +10,6 @@ a {
 }
 
 p {
-	padding-top: 80px;
 	font-size: 3em;
 }
 
@@ -21,7 +20,7 @@ p {
 }
 
 #emoji-button {
-	padding: 8em 0 2em 0;
+	padding: 2em 0 2em 0;
 }
 
 #emoji-button img {
@@ -34,13 +33,9 @@ form {
 	  margin: .5em 0 .5em 0;
 }
 
-form div {
-		padding:none;
-}
-
  input {
 	 -webkit-appearance: none; -moz-appearance: none;
-	  width: 50%; height: 40px;
+	  width: 50%; height: 30px;
 	  line-height: 40px; font-size: 17px;
 	  border: 2px solid #000000;
 }
