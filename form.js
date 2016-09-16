@@ -35,7 +35,7 @@ function sendData() {
     //http://api.jquery.com/jQuery.ajax/
     $.ajax({
       method: "POST",
-      url: "https://traid-test.wufoo.com/api/v3/forms/z1fo42ir16coxbu/entries.json",
+      url: "https://traidtest.wufoo.com/api/v3/forms/z1fo42ir16coxbu/entries.json",
       data: data,
       username: '22CA-0WFA-5XA2-HFB1',
       password: 'F98-8Ld-tKw-JRK',
