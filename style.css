@@ -5,12 +5,6 @@ body {
 	align-content: center;
 }
 
-button {
-	background: none;
-	border-style: none;
-	padding: 0 2em 0 2em;
-}
-
 a {
 	text-decoration: none;
 }
@@ -20,55 +14,56 @@ p {
 	font-size: 3em;
 }
 
+#emoji-button button {
+	background: none;
+	border-style: none;
+	padding: 0 2em 0 2em;
+}
+
 #emoji-button {
-	padding-top: 80px;
-	width:100%;
+	padding: 8em 0 2em 0;
 }
 
 #emoji-button img {
 	width: 18em;
+	cursor: pointer;
 }
 
-/*h1 {
-	float: left;
-	text-align: left;
-	max-width: 300px;
-	margin-top: 0;
-	color: #ffffff;
-	background-color: #F60071;
-}*/
+form {
+	  display: inline-block;
+	  margin: .5em 0 .5em 0;
+}
 
-/*.highlight span {
-	font-size: 1em;
-	line-height: 1.4;
-	padding: 4px 0;
-	border-left: 20px solid #F60071;
-	border-right: 20px solid #F60071;
-}*/
+form div {
+		padding:none;
+}
 
-/*p#information {
-	font-size: 1em;
-	float: left;
-	clear: left;
-	text-align: left;
-	max-width: 300px;
-}*/
+ input {
+	 -webkit-appearance: none; -moz-appearance: none;
+	  width: 50%; height: 40px;
+	  line-height: 40px; font-size: 17px;
+	  border: 2px solid #000000;
+}
 
-/*div#form-page {
-	max-width: 80em;
-	padding: 4em 15em 0 15em;
-	background-color: #ffffff;
+form p {
+	max-width: 50%;
+	font-size: 1.5em;
+	text-align: center;
 	display: inline-block;
 }
-*/
+
+button#send{
+	margin-top: 20px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1em;
+	height: 2em;
+	border: none;
+}
 
 /* Wufoo Styling*/
 
-/*div#form {
-	display: inline-block;
-}*/
-
-div#wufoo-z3jxa1g12hidja {
+/*div#wufoo-z3jxa1g12hidja {
 	padding-top: 4em;
 }
 
@@ -88,15 +83,6 @@ label#title2.desc {
 	font-size: 2em;
 }
 
-/*
-form.wufoo {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	max-height: 580px;
-	max-width: 800px;
-}*/
-
 input#saveForm {
 	background-color: #000000 !important;
 	color: #ffffff !important;
@@ -107,7 +93,7 @@ input#saveForm {
 	border-radius: 4px;
 }
 
-
+*/
 
 
 @media (max-width: 1200px) {
@@ -116,7 +102,7 @@ input#saveForm {
   -webkit-width: 10em;
   width:         10em;
   }
-}3
+}
 @media (max-width: 1000px) {
   #emoji-button img{
   -moz-width:    8em;

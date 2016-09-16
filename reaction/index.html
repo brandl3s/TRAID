@@ -11,21 +11,38 @@
 		<p>How did this film make you feel?  </p>
 
 		<div id="emoji-button">
-			<button><a href="../comment/" onclick="goNext('../comment/', 'shocked'); return false"><img src="../images/emojis/1f62e.png"></a></button>
-			<button><a href="../comment/" onclick="goNext('../comment/', 'sad'); return false"><img src="../images/emojis/1f625.png"></a></button>
-			<button><a href="../comment/" onclick="goNext('../comment/', 'speechless'); return false"><img src="../images/emojis/1f636.png"></a></button>
-			<button><a href="../comment/" onclick="goNext('../comment/', 'angry'); return false"><img src="../images/emojis/1f621.png"></a></button>
-			<button><a href="../comment/" onclick="goNext('../comment/', 'thinking'); return false"><img src="../images/emojis/1f914.png"></a></button>
+			<button value="shocked"><img src="../images/emojis/1f62e.png"></button>
+			<button value="sad"><img src="../images/emojis/1f625.png"></button>
+			<button value="speechless"><img src="../images/emojis/1f636.png"></button>
+			<button value="angry"><img src="../images/emojis/1f621.png"></button>
+			<button value="thoughtful"><img src="../images/emojis/1f914.png"></button>
 		</div>
-		<div id="form">
+
+		<form>
+			<div>
+				<p>Any comments? We will share them with the garment workers involved in this project.  </p>
+				<input type="text" id="comment" required="*">
+			</div>
+			<div>	
+				<p>Please leave your email to find out more and receive links to longer versions of the films. We won’t share your details with anyone.</p>
+			</div>	
+				<input type="email" name="email" id="email">
+		</form>
+
+		<button type="button" id="send">Submit</button>
+
+
+
+		<!-- <div id="form">
 			<div id="wufoo-z3jxa1g12hidja">
 				Fill out my <a href="https://traid.wufoo.com/forms/z3jxa1g12hidja">online form</a>.
 			</div>
-		</div>
+		</div> -->
 
 
 		<script src="../form.js"></script>
-		<script src="../app.js"></script>
+		<script src="../show-hide.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</body>
 
 </html>	
