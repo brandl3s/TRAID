@@ -22,6 +22,7 @@ p {
 
 #emoji-button {
 	padding-top: 80px;
+	width:100%;
 }
 
 #emoji-button img {
@@ -111,30 +112,30 @@ input#saveForm {
 
 @media (max-width: 1200px) {
   #emoji-button img{
-  -moz-width:    14em;
-  -webkit-width: 14em;
-  width:         14em;
-  }
-}3
-@media (max-width: 1000px) {
-  #emoji-button img{
   -moz-width:    10em;
   -webkit-width: 10em;
   width:         10em;
   }
-}
-@media (max-width: 800px) {
+}3
+@media (max-width: 1000px) {
   #emoji-button img{
-  -moz-width:    6em;
-  -webkit-width: 6em;
-  width:         6em;
+  -moz-width:    8em;
+  -webkit-width: 8em;
+  width:         8em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   #emoji-button img{
   -moz-width:    4em;
   -webkit-width: 4em;
   width:         4em;
+  }
+}
+@media (max-width: 400px) {
+  #emoji-button img{
+  -moz-width:    3em;
+  -webkit-width: 3em;
+  width:         3em;
   }
 }
 
