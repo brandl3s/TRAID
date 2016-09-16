@@ -17,7 +17,7 @@ a {
 
 p {
 	padding-top: 80px;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 #emoji-button {
@@ -98,7 +98,7 @@ form.wufoo {
 
 input#saveForm {
 	background-color: #000000 !important;
-	color: #ffffff; !important;
+	color: #ffffff !important;
 	font-size: 1.5em;
 	height: 2.2em;
 	-webkit-border-radius: 4px;
@@ -110,31 +110,31 @@ input#saveForm {
 
 
 @media (max-width: 1200px) {
-  #emoji-button {
-  -moz-font-size:    3em;
-  -webkit-font-size: 3em;
-  font-size:         3em;
+  #emoji-button img{
+  -moz-width:    14em;
+  -webkit-width: 14em;
+  width:         14em;
   }
 }3
 @media (max-width: 1000px) {
-  #emoji-button{
-  -moz-font-size:    3em;
-  -webkit-font-size: 3em;
-  font-size:         3em;
+  #emoji-button img{
+  -moz-width:    10em;
+  -webkit-width: 10em;
+  width:         10em;
   }
 }
 @media (max-width: 800px) {
-  #emoji-button {
-  -moz-font-size:    4em;
-  -webkit-font-size: 4em;
-  font-size:         4em;
+  #emoji-button img{
+  -moz-width:    6em;
+  -webkit-width: 6em;
+  width:         6em;
   }
 }
 @media (max-width: 400px) {
-  #emoji-button {
-  -moz-font-size:    4em;
-  -webkit-font-size: 4em;
-  font-size:         4em;
+  #emoji-button img{
+  -moz-width:    4em;
+  -webkit-width: 4em;
+  width:         4em;
   }
 }
 

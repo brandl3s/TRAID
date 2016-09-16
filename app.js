@@ -15,8 +15,13 @@ function readData( ) {
 }
 
 function loadPage(url) {
-console.log("booboo")
+console.log("loaded")
 	location.href = url
 
 }
 
+/* -- Go Home from Video -- */
+
+document.getElementById("homeButton").onclick = function () {
+        location.href = "..//";
+    };
