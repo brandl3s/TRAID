@@ -56,6 +56,15 @@ button#send{
 	border: none;
 }
 
+button#resubmit{
+	margin-top: 20px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1em;
+	height: 2em;
+	border: none;
+	text-decoration: none;
+}
 /* Wufoo Styling*/
 
 /*div#wufoo-z3jxa1g12hidja {

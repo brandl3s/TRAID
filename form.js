@@ -21,12 +21,30 @@ console.log("app.js ready to display the form");
 
 document.getElementById("send").addEventListener("click", sendData);
 
+	var reaction = {
+		document.getElementById('shocked').addEventListener('click', function() {
+ 		reaction = 'shocked'; 
+		});
+		document.getElementById('sad').addEventListener('click', function() {
+ 		reaction = 'sad'; 
+		});
+		document.getElementById('speechless').addEventListener('click', function() {
+ 		reaction = 'speechless'; 
+		});
+		document.getElementById('angry').addEventListener('click', function() {
+ 		reaction = 'angry'; 
+		});
+		document.getElementById('thoughtful').addEventListener('click', function() {
+ 		reaction = 'thoughtful'; 
+		});
+	};
+
 function sendData() {
 
     var data = {
-        Field6: document.getElementById('emoji-button').value,
-        Field2: document.getElementById('comment').value,
-        Field3: document.getElementById('email').value
+  		Field6 = reaction,
+		Field2: document.getElementById("comment").value,
+        Field3: document.getElementById("email").value
     };
 
     console.log(data);
@@ -45,8 +63,10 @@ function sendData() {
       var message = '';
     if (msg.Success === 1) {
         message = 'Thank you for your repsonse';
+        document.getElementById("success").style.display = "visible";
     } else if (msg.Success === 0) {
         message = msg.FieldErrors[0].ErrorText;
+        document.getElementById("failed").style.display = "block";
     } else {
         message = 'unknown error has occurred';
     }
