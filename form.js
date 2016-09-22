@@ -23,6 +23,8 @@ var commentField = 'Field2';
 // })
 // (document, 'script');
 
+// SENDING DATA TO WUFOO & adding emoji selection
+
 document.getElementById("send").addEventListener("click", sendData);
 
 var reaction = '';
@@ -68,6 +70,9 @@ function sendData() {
       dataType: "json"
     })
   .done(function( msg ) {
+
+    // SUCCESS OR ERROR MESSAGE
+
     console.log(msg);
      if (msg.Success === 1) {
         message = document.write("<h1>Thank you</h1> <h2>How you help</h2> <p> Shopping at TRAID charity shops and donating unwanted clothes raises funds to support projects to improve the lives of garment workers globally.</p>");
