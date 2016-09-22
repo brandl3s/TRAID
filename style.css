@@ -2,7 +2,6 @@
 
 body {
 	text-align: center;
-	align-content: center;
 }
 
 a {
@@ -21,6 +20,8 @@ p {
 
 #emoji-button {
 	padding: 2em 0 2em 0;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 #emoji-button img {
@@ -29,21 +30,23 @@ p {
 }
 
 form {
-	  display: inline-block;
-	  margin: .5em 0 .5em 0;
+	display: inline-block;
+	margin: .5em 0 .5em 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
- input {
-	 -webkit-appearance: none; -moz-appearance: none;
-	  width: 50%; height: 30px;
-	  line-height: 40px; font-size: 17px;
-	  border: 2px solid #000000;
+input {
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	width: 50%; height: 30px;
+	line-height: 40px; font-size: 17px;
+	border: 2px solid #000000;
 }
 
 form p {
 	max-width: 50%;
 	font-size: 24px;
-	text-align: center;
 	display: inline-block;
 }
 
@@ -54,8 +57,19 @@ button#send{
 	font-size: 1em;
 	height: 2em;
 	border: none;
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#response {
+	padding-top: 8em;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: red;
+}
+/*
 button#resubmit{
 	margin-top: 20px;
 	background-color: #000000;
@@ -63,8 +77,7 @@ button#resubmit{
 	font-size: 1em;
 	height: 2em;
 	border: none;
-	text-decoration: none;
-}
+}*/
 /* Wufoo Styling*/
 
 /*div#wufoo-z3jxa1g12hidja {
@@ -99,6 +112,7 @@ input#saveForm {
 
 */
 
+/* EMOJI BUTTON MEDIA RESIZE */
 
 @media (max-width: 1200px) {
   #emoji-button img{
@@ -129,10 +143,18 @@ input#saveForm {
   }
 }
 
+/* P RESIZE MEDIA */
+
+@media (max-width: 400px) {
+	p {
+		font-size: 2em;
+	}
+}
+
 /*  Background Video */
 
 video { 
-  position: fixed;
+/*  position: fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -140,10 +162,10 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
-
+/*
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
 }
-
+*/
