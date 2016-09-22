@@ -24,25 +24,51 @@ var commentField = 'Field2';
 // (document, 'script');
 
 // SENDING DATA TO WUFOO & adding emoji selection
+var reset = function() {
+   shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62e.png';
+   speechless.getElementsByTagName('img')[0].src='../images/emojis/1f636.png';
+   angry.getElementsByTagName('img')[0].src='../images/emojis/1f621.png';
+   sad.getElementsByTagName('img')[0].src='../images/emojis/1f625.png';
+   thoughtful.getElementsByTagName('img')[0].src='../images/emojis/1f914.png';
+} 
 
 document.getElementById("send").addEventListener("click", sendData);
 
 var reaction = '';
 
-document.getElementById('shocked').addEventListener('click', function() {
-	  reaction = 'shocked'; 
+//assign clickable div to variable
+var shocked = document.getElementById('shocked');
+//listen for the click
+shocked.addEventListener('click', function() {
+      //change all the reactions back to their original
+     reset();
+      reaction = 'shocked';
+    //change this reaction
+    if (shocked.getElementsByTagName('img')[0].src === "../images/emojis/1f62e.png") { 
+         shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62es.png';
+    } else {
+         shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62e.png';
+    }
+}); 
+var sad = document.getElementById('sad');
+sad.addEventListener('click', function() {
+        reaction = 'sad';
+      sad.getElementsByTagName('img')[0].src="../images/emojis/1f625s.png";
 });
-document.getElementById('sad').addEventListener('click', function() {
-	  reaction = 'sad'; 
+var speechless = document.getElementById('speechless');
+speechless.addEventListener('click', function() {
+        reaction = 'speechless';
+      speechless.getElementsByTagName('img')[0].src="../images/emojis/1f636s.png";
 });
-document.getElementById('speechless').addEventListener('click', function() {
-	  reaction = 'speechless'; 
+var angry = document.getElementById('angry');
+angry.addEventListener('click', function() {
+        reaction = 'angry';
+      angry.getElementsByTagName('img')[0].src="../images/emojis/1f621s.png";
 });
-document.getElementById('angry').addEventListener('click', function() {
-	  reaction = 'angry'; 
-});
-document.getElementById('thoughtful').addEventListener('click', function() {
-	  reaction = 'thoughtful'; 
+var thoughtful = document.getElementById('thoughtful');
+thoughtful.addEventListener('click', function() {
+        reaction = 'thoughtful';
+      thoughtful.getElementsByTagName('img')[0].src="../images/emojis/1f914s.png";
 });
 
 
