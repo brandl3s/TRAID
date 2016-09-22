@@ -47,29 +47,49 @@ shocked.addEventListener('click', function() {
     if (shocked.getElementsByTagName('img')[0].src === "../images/emojis/1f62e.png") { 
          shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62es.png';
     } else {
-         shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62e.png';
+         shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62es.png';
     }
 }); 
 var sad = document.getElementById('sad');
 sad.addEventListener('click', function() {
-        reaction = 'sad';
-      sad.getElementsByTagName('img')[0].src="../images/emojis/1f625s.png";
-});
+     reset();
+      reaction = 'sad';
+    if (sad.getElementsByTagName('img')[0].src === "../images/emojis/1f625.png") { 
+         sad.getElementsByTagName('img')[0].src='../images/emojis/1f625s.png';
+    } else {
+         sad.getElementsByTagName('img')[0].src='../images/emojis/1f625s.png';
+    }
+}); 
 var speechless = document.getElementById('speechless');
 speechless.addEventListener('click', function() {
-        reaction = 'speechless';
-      speechless.getElementsByTagName('img')[0].src="../images/emojis/1f636s.png";
-});
+     reset();
+      reaction = 'speechless';
+    if (speechless.getElementsByTagName('img')[0].src === "../images/emojis/1f636.png") { 
+         speechless.getElementsByTagName('img')[0].src='../images/emojis/1f636s.png';
+    } else {
+         speechless.getElementsByTagName('img')[0].src='../images/emojis/1f636s.png';
+    }
+}); 
 var angry = document.getElementById('angry');
 angry.addEventListener('click', function() {
-        reaction = 'angry';
-      angry.getElementsByTagName('img')[0].src="../images/emojis/1f621s.png";
-});
+     reset();
+      reaction = 'angry';
+    if (angry.getElementsByTagName('img')[0].src === "../images/emojis/1f621.png") { 
+         angry.getElementsByTagName('img')[0].src='../images/emojis/1f621s.png';
+    } else {
+         angry.getElementsByTagName('img')[0].src='../images/emojis/1f621s.png';
+    }
+}); 
 var thoughtful = document.getElementById('thoughtful');
 thoughtful.addEventListener('click', function() {
-        reaction = 'thoughtful';
-      thoughtful.getElementsByTagName('img')[0].src="../images/emojis/1f914s.png";
-});
+     reset();
+      reaction = 'thoughtful';
+    if (thoughtful.getElementsByTagName('img')[0].src === "../images/emojis/1f914.png") { 
+         thoughtful.getElementsByTagName('img')[0].src='../images/emojis/1f914s.png';
+    } else {
+         thoughtful.getElementsByTagName('img')[0].src='../images/emojis/1f914s.png';
+    }
+}); 
 
 
 function sendData() {
