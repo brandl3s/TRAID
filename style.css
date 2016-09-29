@@ -12,10 +12,22 @@ p {
 	font-size: 3em;
 }
 
-#emoji-button button {
+/*#emoji-button button {
 	background: none;
 	border-style: none;
 	padding: 0 2em 0 2em;
+}*/
+
+#emoji-button button {
+	background: none;
+	padding: 10px;
+	border-radius: 50%;
+	border: 4px solid transparent;
+	transition: .5s border-color;
+}
+
+#emoji-button button.selected {
+	border-color: black;
 }
 
 #emoji-button {
@@ -58,8 +70,8 @@ button#send{
 	height: 2em;
 	border: none;
 	display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 40%;
+    margin-left: 40%;
 }
 
 #response {
@@ -109,11 +121,9 @@ input#saveForm {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
-
 */
 
 /* EMOJI BUTTON MEDIA RESIZE */
-
 @media (max-width: 1200px) {
   #emoji-button img{
   -moz-width:    10em;
@@ -143,18 +153,37 @@ input#saveForm {
   }
 }
 
-/* P RESIZE MEDIA */
+@media (max-width: 1000px) {
+	#emoji-button button {
+	padding: 8px;
+	border: 3.5px solid transparent;
+  }
+}
 
+@media (max-width: 800px) {
+	#emoji-button button {
+	padding: 6px;
+	border: 2.5px solid transparent;
+  }
+}
+
+@media (max-width: 400px) {
+	#emoji-button button {
+	padding: 4px;
+	border: 1.5px solid transparent;
+  }
+}
+
+/* P RESIZE MEDIA */
 @media (max-width: 400px) {
 	p {
 		font-size: 2em;
 	}
 }
 
-/*  Background Video */
-
+/*  Background Video 2732 x 2048 */
 video { 
-/*  position: fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -162,7 +191,7 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
-  transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
 }
 /*
 @media screen and (max-width: 500px) { 

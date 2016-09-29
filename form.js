@@ -23,23 +23,58 @@ var commentField = 'Field2';
 // })
 // (document, 'script');
 
-// SENDING DATA TO WUFOO & adding emoji selection
+// SENDING DATA TO WUFOO & adding emoji 'selected'
 var reset = function() {
-   shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62e.png';
-   speechless.getElementsByTagName('img')[0].src='../images/emojis/1f636.png';
-   angry.getElementsByTagName('img')[0].src='../images/emojis/1f621.png';
-   sad.getElementsByTagName('img')[0].src='../images/emojis/1f625.png';
-   thoughtful.getElementsByTagName('img')[0].src='../images/emojis/1f914.png';
+  shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62e.png';
+  speechless.getElementsByTagName('img')[0].src='../images/emojis/1f636.png';
+  angry.getElementsByTagName('img')[0].src='../images/emojis/1f621.png';
+  sad.getElementsByTagName('img')[0].src='../images/emojis/1f625.png';
+  thoughtful.getElementsByTagName('img')[0].src='../images/emojis/1f914.png';
 } 
 
 document.getElementById("send").addEventListener("click", sendData);
 
 var reaction = '';
 
+function emojiClick(event)
+{
+  // remove the selected class from all the buttons inside #emoji-button
+  $('#emoji-button button').removeClass('selected');
+
+  // work out which is the one button that has been clicked (ie the event target)
+  var button = event.currentTarget;
+
+  // update the value of reaction
+  reaction = button.id;
+  console.log('reaction is ' + reaction)
+
+  // add the selected class to the button which has been clicked
+  $(button).addClass('selected');
+}
+
 //assign clickable div to variable
+
+/*
+// the jQuery way
+$('#shocked').click(emojiClick);
+
+// the vanilla JS way
 var shocked = document.getElementById('shocked');
+shocked.addEventListener('click', emojiClick);
+
+*/
+
+var reactions = [ 'shocked', 'sad', 'speechless', 'angry', 'thoughtful']
+
+for (var i = 0; i < reactions.length; i++) 
+{
+  var currentReaction = reactions[i];
+  var currentButton = document.getElementById(currentReaction);
+  currentButton.addEventListener('click', emojiClick);
+}
+
 //listen for the click
-shocked.addEventListener('click', function() {
+/*shocked.addEventListener('click', function() {
       //change all the reactions back to their original
      reset();
       reaction = 'shocked';
@@ -50,6 +85,7 @@ shocked.addEventListener('click', function() {
          shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62es.png';
     }
 }); 
+
 var sad = document.getElementById('sad');
 sad.addEventListener('click', function() {
      reset();
@@ -91,9 +127,9 @@ thoughtful.addEventListener('click', function() {
     }
 }); 
 
+*/
 
 function sendData() {
-
 
   var message = "Sending, please wait";
   document.getElementById("response").innerHTML = message;
@@ -118,11 +154,10 @@ function sendData() {
   .done(function( msg ) {
 
     // SUCCESS OR ERROR MESSAGE
-
-    console.log(msg);
+       console.log(msg);
      if (msg.Success === 1) {
-        message = document.write("<h1>Thank you</h1> <h2>How you help</h2> <p> Shopping at TRAID charity shops and donating unwanted clothes raises funds to support projects to improve the lives of garment workers globally.</p>");
-    } else if (msg.Success === 0) {
+        message = "<h1>Thank you</h1> <h2>How you help</h2> <p>Shopping at TRAID charity shops and donating unwanted clothes raises funds to support projects to improve the lives of garment workers globally.</p>";
+      } else if (msg.Success === 0) {
         //figure out the error
 
         if (msg.FieldErrors[0].ID === emailField) {
@@ -137,8 +172,28 @@ function sendData() {
     }
 
     document.getElementById("response").innerHTML = message;
-
+    // document.getElementById('reactionPage').style.display = "none";
   });
 };
+// -- Screen Saver Timer -- 
+var timeout;
+
+function goHome() {
+    location.href = "..//screen-saver";
+    clearTimeout(timeout);
+}
+
+    document.onkeypress = function clear() {
+    if (timeout) {
+      clearTimeout(timeout);
+      timeout = null;
+    }
+  timeout = setTimeout(goHome, 1800);
+};
+// does this need to be an if timeout go home else keypress reset timer? OR add click/mouse
+
+// what if it times out while they are filling out the form? 
+// OR what if they start filling out the form but leave without submitting and someone quickly comes along?
+
 
 
