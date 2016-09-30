@@ -1,7 +1,12 @@
 /*css for web app :)*/
+@font-face {
+    font-family:AGBuchCondensedBQRegular;
+    src: url(AGBuchCondensedBQRegular.otf);
+}
 
 body {
 	text-align: center;
+	font-family: AGBuchCondensedBQRegular, "Impact";
 }
 
 a {
@@ -9,18 +14,12 @@ a {
 }
 
 p {
-	font-size: 3em;
+	font-size: 4em;
 }
-
-/*#emoji-button button {
-	background: none;
-	border-style: none;
-	padding: 0 2em 0 2em;
-}*/
 
 #emoji-button button {
 	background: none;
-	padding: 10px;
+	padding: 15px;
 	border-radius: 50%;
 	border: 4px solid transparent;
 	transition: .5s border-color;
@@ -31,13 +30,13 @@ p {
 }
 
 #emoji-button {
-	padding: 2em 0 2em 0;
+	padding: 1.5em 0 .5em 0;
 	margin-left: auto;
     margin-right: auto;
 }
 
 #emoji-button img {
-	width: 18em;
+	width: 20em;
 	cursor: pointer;
 }
 
@@ -56,22 +55,40 @@ input {
 	border: 2px solid #000000;
 }
 
+textarea [contenteditable] {
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	width: 50%; height: 30px;
+	line-height: 40px; font-size: 17px;
+	border: 2px solid #000000;
+	overflow: auto;
+}
+
 form p {
 	max-width: 50%;
-	font-size: 24px;
+	font-size: 28px;
 	display: inline-block;
 }
 
 button#send{
+	font-family: AGBuchCondensedBQRegular, "Impact";
 	margin-top: 20px;
 	background-color: #000000;
 	color: #ffffff;
-	font-size: 1em;
+	font-size: 1.5em;
 	height: 2em;
 	border: none;
 	display: inline-block;
     margin-right: 40%;
     margin-left: 40%;
+}
+
+#reactionPage {
+	transition: opacity 1s;
+	z-index: 50;
+	position: absolute;
+	margin-left: 10%;
+    margin-right: 10%;
 }
 
 #response {
@@ -80,76 +97,47 @@ button#send{
     margin-right: auto;
     text-align: center;
     background-color: red;
-}
-/*
-button#resubmit{
-	margin-top: 20px;
-	background-color: #000000;
-	color: #ffffff;
-	font-size: 1em;
-	height: 2em;
-	border: none;
-}*/
-/* Wufoo Styling*/
-
-/*div#wufoo-z3jxa1g12hidja {
-	padding-top: 4em;
+    width: 40em;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    z-index: 10;
 }
 
-header#header.info h2 {
-	display: none;
+#response h1, h2, h3 {
+	font-size: 5em;
 }
-
-input.text {
-	margin: 2px;
-}
-
-label#title1.desc {
-	font-size: 2em;
-}
-
-label#title2.desc {
-	font-size: 2em;
-}
-
-input#saveForm {
-	background-color: #000000 !important;
-	color: #ffffff !important;
-	font-size: 1.5em;
-	height: 2.2em;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-}
-*/
 
 /* EMOJI BUTTON MEDIA RESIZE */
 @media (max-width: 1200px) {
+  #emoji-button img{
+  -moz-width:    16em;
+  -webkit-width: 16em;
+  width:         16em;
+  }
+}
+@media (max-width: 1000px) {
   #emoji-button img{
   -moz-width:    10em;
   -webkit-width: 10em;
   width:         10em;
   }
 }
-@media (max-width: 1000px) {
-  #emoji-button img{
-  -moz-width:    8em;
-  -webkit-width: 8em;
-  width:         8em;
-  }
-}
 @media (max-width: 800px) {
   #emoji-button img{
-  -moz-width:    4em;
-  -webkit-width: 4em;
-  width:         4em;
+  -moz-width:    6em;
+  -webkit-width: 6em;
+  width:         6em;
   }
 }
 @media (max-width: 400px) {
   #emoji-button img{
-  -moz-width:    3em;
-  -webkit-width: 3em;
-  width:         3em;
+  -moz-width:    4em;
+  -webkit-width: 4em;
+  width:         4em;
   }
 }
 
