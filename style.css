@@ -48,26 +48,24 @@ form {
 }
 
 input {
-	-webkit-appearance: none; 
-	-moz-appearance: none;
-	width: 50%; height: 30px;
-	line-height: 40px; font-size: 17px;
+	width: 50%; 
+	height: 30px;
+	line-height: 40px; 
+	font-size: 17px;
 	border: 2px solid #000000;
 }
 
-/*span [contenteditable], */textarea {
-	-webkit-appearance: none; 
-	-moz-appearance: none;
-	width: 50%;
-	/*line-height: 40px; */font-size: 17px;
+#reaction-text {
+ 	position: relative;
+ 	display: block;
+ 	height:auto;
+ 	min-height: 30px;
+ 	width:60%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	padding-top:5px;
+	font-size: 17px; 
 	border: 2px solid #000000;
-/*	overflow: auto;*/
-	resize: none;
-	/*max-height: 200px;*/
-	overflow: hidden;
-    padding: 0;
-    display:block;
-  	box-sizing: padding-box;
 }
 
 form p {
@@ -115,64 +113,6 @@ button#send{
 
 #response h1, h2, h3 {
 	font-size: 5em;
-}
-
-/* EMOJI BUTTON MEDIA RESIZE */
-@media (max-width: 1200px) {
-  #emoji-button img{
-  -moz-width:    16em;
-  -webkit-width: 16em;
-  width:         16em;
-  }
-}
-@media (max-width: 1000px) {
-  #emoji-button img{
-  -moz-width:    10em;
-  -webkit-width: 10em;
-  width:         10em;
-  }
-}
-@media (max-width: 800px) {
-  #emoji-button img{
-  -moz-width:    6em;
-  -webkit-width: 6em;
-  width:         6em;
-  }
-}
-@media (max-width: 400px) {
-  #emoji-button img{
-  -moz-width:    4em;
-  -webkit-width: 4em;
-  width:         4em;
-  }
-}
-
-@media (max-width: 1000px) {
-	#emoji-button button {
-	padding: 8px;
-	border: 3.5px solid transparent;
-  }
-}
-
-@media (max-width: 800px) {
-	#emoji-button button {
-	padding: 6px;
-	border: 2.5px solid transparent;
-  }
-}
-
-@media (max-width: 400px) {
-	#emoji-button button {
-	padding: 4px;
-	border: 1.5px solid transparent;
-  }
-}
-
-/* P RESIZE MEDIA */
-@media (max-width: 400px) {
-	p {
-		font-size: 2em;
-	}
 }
 
 /*  Background Video 2732 x 2048 */

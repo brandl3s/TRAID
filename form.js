@@ -53,7 +53,7 @@ function sendData() {
 
     var data = {
   		Field8: reaction,
-		  Field2: document.getElementById("comment").value,
+		  Field2: document.getElementById('reaction-text').innerHTML,
       Field3: document.getElementById("email").value
     };
 
