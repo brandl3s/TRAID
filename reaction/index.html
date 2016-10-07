@@ -6,6 +6,22 @@
 		<link rel="stylesheet" href="../style.css">
 	</head>
 
+	<style>
+		/* Style for make shift text box */
+		#reaction-text {
+			position: relative;
+			display: block;
+			height:auto;
+			min-height: 35px;
+			width:60%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top:5px;
+			font-size: 20px; 
+			border: 2px solid black;
+		}
+	</style>
+
 	<body>
 		<section id="reactionPage">
 			<p>How did this film make you feel?  </p>
@@ -30,10 +46,26 @@
 				<div>
 					<p>Any comments? We will share them with the garment workers involved in this project.  
 					</p>
-					<!-- <span contenteditable="true"> -->
-						<textarea rows="1" id="comment" data-min-rows='1'></textarea>
-				<!-- 	</span> -->
 
+					<!-- 
+						At this time you don't need to worry about accessibiltiy or cross compatibility, so using contenteditable in a div/span is an OK hack
+
+						If this was released to the world, you would want to implement browser input behaviour, tabs, screen reader stuff.
+
+						Simply, when you get to a new line, the style of auto hieght grows with the text.
+
+						When you submit, you want to pickup the contents of the span using 
+						document.getElementById('reaction-text').innerText
+
+						innerText property is non standard, and will not work cross browser, but it is fine for your needs.
+
+						It would be prefable to use innerHTML instead - but you would have to parse the line breaks and divs - this isn't a big deal but 
+
+						document.getElementById('reaction-text').innerHTML
+
+					-->
+
+					<span id="reaction-text" contenteditable="true"></span>
 				</div>
 				<div>	
 					<p>Please leave your email to find out more and receive links to longer versions of the films. We won’t share your details with anyone.
@@ -53,7 +85,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="../form.js"></script>
 		<script src="../comment.js"></script>
-		
+
 	</body>
 
 </html>	
