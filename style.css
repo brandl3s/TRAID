@@ -60,7 +60,7 @@ input {
  	display: block;
  	height:auto;
  	min-height: 30px;
- 	width:60%;
+ 	width: 50%;
  	margin-left: auto;
  	margin-right: auto;
  	padding-top:5px;
@@ -100,7 +100,8 @@ button#send{
 	margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: red;
+    background-color: #000000;
+    color: #ffffff;
     width: 40em;
     position: absolute;
     top: 10%;
@@ -116,19 +117,22 @@ button#send{
 }
 
 /*  Background Video 2732 x 2048 */
-video { 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translate(-50%, -50%);
+#homeButton video { 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translate(-50%, -50%);
 }
-/*
-@media screen and (max-width: 500px) { 
-  div{width:70%;} 
+
+video#player {
+	top:50%;
+	position: fixed;
+	width: 1000px;
+	height: auto;
+	transform: translate(-50%, -50%);
 }
-*/
