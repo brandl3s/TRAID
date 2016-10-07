@@ -55,13 +55,19 @@ input {
 	border: 2px solid #000000;
 }
 
-textarea [contenteditable] {
+/*span [contenteditable], */textarea {
 	-webkit-appearance: none; 
 	-moz-appearance: none;
-	width: 50%; height: 30px;
-	line-height: 40px; font-size: 17px;
+	width: 50%;
+	/*line-height: 40px; */font-size: 17px;
 	border: 2px solid #000000;
-	overflow: auto;
+/*	overflow: auto;*/
+	resize: none;
+	/*max-height: 200px;*/
+	overflow: hidden;
+    padding: 0;
+    display:block;
+  	box-sizing: padding-box;
 }
 
 form p {

@@ -117,7 +117,7 @@ var clear = function() {
 };
 
 var setTimer = function() {
-  timeout = setTimeout(goHome, 60000);
+  timeout = setTimeout(goHome, 600000);
 };
 
 document.addEventListener('keypress', clear);
