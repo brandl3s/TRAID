@@ -73,22 +73,24 @@ function sendData() {
          console.log(msg);
        if (msg.Success === 1) {
         //something should prolly go here
-
+        document.getElementById('reactionPage').style.opacity = 0;
+        document.getElementById('success').style.opacity = 1;
         } else if (msg.Success === 0) {
           //figure out the error
-
           if (msg.FieldErrors[0].ID === emailField) {
-            //something goes here?
-          //message = '<button type="button" id="send">Resubmit</button>';
+            document.getElementById('reactionPage').style.opacity = 0;
+            document.getElementById('emailError').style.opacity = 1;
           } else {
             message = msg.FieldErrors[0].ErrorText;
+            document.getElementById('reactionPage').style.opacity = 0;
+            document.getElementById('error').style.opacity = 1;
           }
 
       } else {
           message = 'unknown error has occurred';
       }
-      document.getElementById('reactionPage').style.opacity = 0;
-      document.getElementById('response').style.opacity = 1;
+      // document.getElementById('reactionPage').style.opacity = 0;
+      // document.getElementById('response').style.opacity = 1;
     })
     .fail(function() {
     //sommink goes here too prolly
