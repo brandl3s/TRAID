@@ -32,7 +32,7 @@ p {
 #emoji-button {
 	padding: 1.5em 0 .5em 0;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 #emoji-button img {
@@ -43,14 +43,14 @@ p {
 form {
 	display: inline-block;
 	margin: .5em 0 .5em 0;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input {
-	width: 50%; 
+	width: 50%;
 	height: 30px;
-	line-height: 40px; 
+	line-height: 40px;
 	font-size: 17px;
 	border: 2px solid #000000;
 }
@@ -64,7 +64,7 @@ input {
  	margin-left: auto;
  	margin-right: auto;
  	padding-top:5px;
-	font-size: 17px; 
+	font-size: 17px;
 	border: 2px solid #000000;
 }
 
@@ -83,8 +83,8 @@ button#send{
 	height: 2em;
 	border: none;
 	display: inline-block;
-    margin-right: 40%;
-    margin-left: 40%;
+  margin-right: 40%;
+  margin-left: 40%;
 }
 
 #reactionPage {
@@ -92,32 +92,37 @@ button#send{
 	z-index: 50;
 	position: absolute;
 	margin-left: 10%;
-    margin-right: 10%;
+  margin-right: 10%;
 }
 
 #response {
 	padding-top: 8em;
 	margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: #000000;
-    color: #ffffff;
-    width: 40em;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 500px;
-    height: 500px;
-    margin-left: -250px;
-    z-index: 10;
+  margin-right: auto;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  width: 40em;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  z-index: 10;
+  font-size: 4em;
 }
 
 #response h1, h2, h3 {
 	font-size: 5em;
 }
 
+#response button {
+  font-family: AGBuchCondensedBQRegular, "Impact";
+}
+
 /*  Background Video 2732 x 2048 */
-#homeButton video { 
+#homeButton video {
 	position: fixed;
 	top: 50%;
 	left: 50%;
