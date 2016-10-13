@@ -13,7 +13,7 @@ var reset = function() {
   thoughtful.getElementsByTagName('img')[0].src='../images/emojis/1f914.png';
 }
 
-document.getElementById("send").addEventListener("click", sendData);
+document.getElementById('send').addEventListener('click', sendData);
 
 var reaction = '';
 
@@ -44,17 +44,20 @@ for (var i = 0; i < reactions.length; i++) {
   currentButton.addEventListener('click', emojiClick);
 }
 
-document.getElementById("response").style.opacity = 0;
+document.getElementById('response').style.opacity = 0;
+document.getElementById('success').style.opacity = 0;
+document.getElementById('emailError').style.opacity = 0;
+document.getElementById('error').style.opacity = 0;
 
 function sendData() {
 
-  var message = "Sending, please wait";
-  document.getElementById("response") = message;
+  var message = 'Sending, please wait';
+  document.getElementById('response').innerHTML = message;
 
     var data = {
   		Field8: reaction,
-		  Field2: document.getElementById("reaction-text").innerHTML,
-      Field3: document.getElementById("email").value
+		  Field2: document.getElementById('reaction-text').innerHTML,
+      Field3: document.getElementById('email').value
     };
 
     console.log(data);
@@ -79,13 +82,22 @@ function sendData() {
           //figure out the error
           if (msg.FieldErrors[0].ID === emailField) {
             document.getElementById('reactionPage').style.opacity = 0;
-            document.getElementById("emailError").style.opacity = 1;
+            document.getElementById('emailError').style.opacity = 1;
+            document.getElementById('emailError').style.zIndex = 60;
+            document.getElementById('reactionResubmit').onclick = function () {
+              document.getElementById('reactionPage').style.opacity = 1;
+              document.getElementById('emailError').style.opacity = 0;
+            };
           } else {
             message = msg.FieldErrors[0].ErrorText;
             document.getElementById('reactionPage').style.opacity = 0;
             document.getElementById('error').style.opacity = 1;
-          }
-
+            document.getElementById('error').style.zIndex = 60;
+            document.getElementById('reactionResubmit').onclick = function () {
+              document.getElementById('reactionPage').style.opacity = 1;
+              document.getElementById('error').style.opacity = 0;
+          };
+        }
       } else {
           message = 'unknown error has occurred';
       }
@@ -102,7 +114,7 @@ function sendData() {
 var timeout;
 
 function goHome() {
-    location.href = "..//screen-saver";
+    location.href = '..//screen-saver';
     clearTimeout(timeout);
 }
 

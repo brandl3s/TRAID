@@ -14,7 +14,8 @@ a {
 }
 
 p {
-	font-size: 4em;
+	font-size: 3em;
+  padding: 0 0 0 0;
 }
 
 #emoji-button button {
@@ -30,13 +31,13 @@ p {
 }
 
 #emoji-button {
-	padding: 1.5em 0 .5em 0;
+	padding: .8em 0 .2em 0;
 	margin-left: auto;
   margin-right: auto;
 }
 
 #emoji-button img {
-	width: 20em;
+	width: 18em;
 	cursor: pointer;
 }
 
@@ -45,14 +46,6 @@ form {
 	margin: .5em 0 .5em 0;
   margin-left: auto;
   margin-right: auto;
-}
-
-input {
-	width: 50%;
-	height: 30px;
-	line-height: 40px;
-	font-size: 17px;
-	border: 2px solid #000000;
 }
 
 #reaction-text {
@@ -68,9 +61,17 @@ input {
 	border: 2px solid #000000;
 }
 
+input {
+	width: 50%;
+	height: 30px;
+	font-size: 17px;
+	border: 2px solid #000000;
+  font-family: AGBuchCondensedBQRegular, "Impact";
+}
+
 form p {
 	max-width: 50%;
-	font-size: 28px;
+	font-size: 24px;
 	display: inline-block;
 }
 
@@ -79,8 +80,8 @@ button#send{
 	margin-top: 20px;
 	background-color: #000000;
 	color: #ffffff;
-	font-size: 1.5em;
-	height: 2em;
+	font-size: 1em;
+	height: 1.5em;
 	border: none;
 	display: inline-block;
   margin-right: 40%;
@@ -96,29 +97,76 @@ button#send{
 }
 
 #response {
-	padding-top: 8em;
+	padding-top: 1em;
 	margin-left: auto;
   margin-right: auto;
   text-align: center;
   background-color: #000000;
   color: #ffffff;
-  width: 40em;
   position: absolute;
-  top: 10%;
   left: 50%;
   width: 500px;
-  height: 500px;
   margin-left: -250px;
   z-index: 10;
-  font-size: 4em;
+  font-size: 1em;
 }
 
-#response h1, h2, h3 {
-	font-size: 5em;
+#success {
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+  z-index: 10;
+  font-size: 1em;
 }
 
-#response button {
+#emailError {
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+  z-index: 10;
+  font-size: 1.5em;
+}
+
+#error {
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+  z-index: 10;
+  font-size: 1.5em;
+}
+
+#reactionResubmit {
   font-family: AGBuchCondensedBQRegular, "Impact";
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  height: 30px;
+  border: none;
+  display: inline-block;
+  margin-right: 40%;
+  margin-left: 40%;
 }
 
 /*  Background Video 2732 x 2048 */
