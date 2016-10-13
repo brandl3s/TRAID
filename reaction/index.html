@@ -30,14 +30,14 @@
 				<div>
 					<p>Any comments? We will share them with the garment workers involved in this project.  
 					</p>
-					
+
 					<span id="reaction-text" contenteditable="true"></span>
 
 				</div>
-				<div>	
+				<div>
 					<p>Please leave your email to find out more and receive links to longer versions of the films. We won’t share your details with anyone.
 					</p>
-				</div>	
+				</div>
 					<input type="email" name="email" id="email">
 			</form>
 
@@ -45,13 +45,28 @@
 		</section>
 
 <!-- Success or Failure Page -->
-	<section id="response">
-		
+
+	<section id="success">
+		<h1>Thank you</h1>
+			<h2>How you help</h2>
+				<p>Shopping at TRAID charity shops and donating unwanted clothes
+					raises funds to support projects to improve the lives of garment
+					workers globally.
+				</p>
+	</section>
+	<section id="emailError">
+		<p>"Please provide a valid email address"</p>
+		<button id="reactionResubmit">Resubmit</button>
+	</section>
+	<section id="error">
+		<h1>Error</h1>
+			<p>There has been an error sending your data</p>
+			<button id="reactionResubmit">Resubmit</button>
 	</section>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="../form.js"></script>
-		
+
 	</body>
 
-</html>	
+</html>

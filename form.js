@@ -11,7 +11,7 @@ var reset = function() {
   sad.getElementsByTagName('img')[0].src='../images/emojis/1f625.png';
   angry.getElementsByTagName('img')[0].src='../images/emojis/1f621.png';
   thoughtful.getElementsByTagName('img')[0].src='../images/emojis/1f914.png';
-} 
+}
 
 document.getElementById("send").addEventListener("click", sendData);
 
@@ -19,7 +19,7 @@ var reaction = '';
 
 function emojiClick(event) {
   // remove the selected class from all the buttons inside #emoji-button
-  var kids = document.getElementById('emoji-button').children;  
+  var kids = document.getElementById('emoji-button').children;
 
   for(var i = 0 ; i < kids.length ; i++) {
 
@@ -67,40 +67,36 @@ function sendData() {
       password: 'F98-8Ld-tKw-JRK',
       dataType: "json"
     })
-    .done(function( msg ) { 
+    .done(function( msg ) {
 
       // SUCCESS OR ERROR MESSAGE
          console.log(msg);
        if (msg.Success === 1) {
-          message = "<h1>Thank you</h1>";
-          message += "<h2>How you help</h2>";
-          message += "<p>Shopping at TRAID charity shops and donating unwanted clothes raises funds to support projects to improve the lives of garment workers globally.</p>";
+        //something should prolly go here
 
         } else if (msg.Success === 0) {
           //figure out the error
 
           if (msg.FieldErrors[0].ID === emailField) {
-            message = "Please provide a valid email address";          
+            //something goes here?
+          //message = '<button type="button" id="send">Resubmit</button>';
           } else {
-            message = msg.FieldErrors[0].ErrorText;          
+            message = msg.FieldErrors[0].ErrorText;
           }
 
       } else {
           message = 'unknown error has occurred';
       }
-
-      document.getElementById("response").innerHTML = message;
       document.getElementById('reactionPage').style.opacity = 0;
       document.getElementById('response').style.opacity = 1;
     })
     .fail(function() {
-      message = "<h1>Error</h1> <p>There has been an error sending your data</p>";
-      document.getElementById("response").innerHTML = message;
+    //sommink goes here too prolly
       document.getElementById('reactionPage').style.opacity = 0;
       document.getElementById('response').style.opacity = 1;
     });
 };
-// -- Screen Saver Timer -- 
+// -- Screen Saver Timer --
 var timeout;
 
 function goHome() {
@@ -113,7 +109,7 @@ var clear = function() {
     clearTimeout(timeout);
     timeout = null;
     setTimer();
-  }  
+  }
 };
 
 var setTimer = function() {
