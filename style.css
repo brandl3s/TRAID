@@ -95,7 +95,7 @@ button#send{
   margin-right: 10%;
 }
 
-#error, #emailError, #success, #response {
+#emojiError, #emailError, #commentError, #success, #response {
   padding-top: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -104,8 +104,8 @@ button#send{
   color: #000000;
   position: absolute;
   left: 50%;
-  width: 500px;
-  margin-left: -250px;
+  width: 600px;
+  margin-left: -295px;
   z-index: 10;
 }
 
@@ -116,7 +116,6 @@ button#send{
 #support {
   font-size: 42px;
 }
-
 
 #replay img {
   width: 22px;
@@ -133,7 +132,7 @@ button#send{
   color: #EDECEC;
 }
 
-#emailResubmit, #commentResubmit {
+#emailResubmit, #commentResubmit, #emojiResubmit {
   font-family: AGBuchCondensedBQRegular, "Impact";
   margin-top: 20px;
   background-color: #000000;

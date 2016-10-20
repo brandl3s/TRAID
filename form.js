@@ -47,7 +47,8 @@ for (var i = 0; i < reactions.length; i++) {
 document.getElementById('response').style.opacity = 0;
 document.getElementById('success').style.opacity = 0;
 document.getElementById('emailError').style.opacity = 0;
-document.getElementById('error').style.opacity = 0;
+document.getElementById('emojiError').style.opacity = 0;
+document.getElementById('commentError').style.opacity = 0;
 
 function sendData() {
 
@@ -93,15 +94,24 @@ function sendData() {
               document.getElementById('emailError').style.opacity = 0;
               document.getElementById('emailError').style.zIndex = 10;
             };
+          } else if (msg.FieldErrors[0].ID === reactionField) {
+            document.getElementById('reactionPage').style.opacity = 0;
+            document.getElementById('emojiError').style.opacity = 1;
+            document.getElementById('emojiError').style.zIndex = 60;
+            document.getElementById('emojiResubmit').onclick = function () {
+              document.getElementById('reactionPage').style.opacity = 1;
+              document.getElementById('emojiError').style.opacity = 0;
+              document.getElementById('emojiError').style.zIndex = 10;
+            };
           } else {
             message = msg.FieldErrors[0].ErrorText;
             document.getElementById('reactionPage').style.opacity = 0;
-            document.getElementById('error').style.opacity = 1;
-            document.getElementById('error').style.zIndex = 60;
+            document.getElementById('commentError').style.opacity = 1;
+            document.getElementById('commentError').style.zIndex = 60;
             document.getElementById('commentResubmit').onclick = function () {
-              document.getElementById('reactionPage').style.opacity = 1;
-              document.getElementById('error').style.opacity = 0;
-              document.getElementById('error').style.zIndex = 10;
+              document.getElementById('commentError').style.opacity = 1;
+              document.getElementById('commentError').style.opacity = 0;
+              document.getElementById('commentError').style.zIndex = 10;
             };
         }
       } else {
