@@ -15,7 +15,6 @@ a {
 
 p {
 	font-size: 3em;
-  padding: 0 0 0 0;
 }
 
 #emoji-button button {
@@ -96,71 +95,53 @@ button#send{
   margin-right: 10%;
 }
 
-#response {
-	padding-top: 1em;
-	margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  position: absolute;
-  left: 50%;
-  width: 500px;
-  margin-left: -250px;
-  z-index: 10;
-  font-size: 1em;
-}
-
-#success {
+#error, #emailError, #success, #response {
   padding-top: 1em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  position: absolute;
-  left: 50%;
-  width: 500px;
-  margin-left: -250px;
-  z-index: 10;
-  font-size: 1em;
-}
-
-#emailError {
-  padding-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  position: absolute;
-  left: 50%;
-  width: 500px;
-  margin-left: -250px;
-  z-index: 10;
-  font-size: 1.5em;
-}
-
-#error {
-  padding-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  position: absolute;
-  left: 50%;
-  width: 500px;
-  margin-left: -250px;
-  z-index: 10;
-  font-size: 1.5em;
-}
-
-#reactionResubmit {
-  font-family: AGBuchCondensedBQRegular, "Impact";
-  margin-top: 20px;
   background-color: #ffffff;
   color: #000000;
+  position: absolute;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+  z-index: 10;
+}
+
+#help {
+  font-size: 48px;
+}
+
+#support {
+  font-size: 42px;
+}
+
+#replay button {
+  background: none;
+  border:none;
+}
+
+#replay img {
+  width: 22px;
+  cursor: pointer;
+}
+
+#credits {
+  font-size: 28px;
+}
+
+#emojiCredit {
+  padding-top: 2em;
+  font-size: 8px;
+  color: #C1C0CF;
+}
+
+#emailResubmit, #commentResubmit {
+  font-family: AGBuchCondensedBQRegular, "Impact";
+  margin-top: 20px;
+  background-color: #000000;
+  color: #ffffff;
   font-size: 20px;
   height: 30px;
   border: none;

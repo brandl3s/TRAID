@@ -78,25 +78,30 @@ function sendData() {
         //something should prolly go here
         document.getElementById('reactionPage').style.opacity = 0;
         document.getElementById('success').style.opacity = 1;
+        document.getElementById("replay").onclick = function () {
+            location.href = "..//..//";
+        };
         } else if (msg.Success === 0) {
           //figure out the error
           if (msg.FieldErrors[0].ID === emailField) {
             document.getElementById('reactionPage').style.opacity = 0;
             document.getElementById('emailError').style.opacity = 1;
             document.getElementById('emailError').style.zIndex = 60;
-            document.getElementById('reactionResubmit').onclick = function () {
+            document.getElementById('emailResubmit').onclick = function () {
               document.getElementById('reactionPage').style.opacity = 1;
               document.getElementById('emailError').style.opacity = 0;
+              document.getElementById('emailError').style.zIndex = 10;
             };
           } else {
             message = msg.FieldErrors[0].ErrorText;
             document.getElementById('reactionPage').style.opacity = 0;
             document.getElementById('error').style.opacity = 1;
             document.getElementById('error').style.zIndex = 60;
-            document.getElementById('reactionResubmit').onclick = function () {
+            document.getElementById('commentResubmit').onclick = function () {
               document.getElementById('reactionPage').style.opacity = 1;
               document.getElementById('error').style.opacity = 0;
-          };
+              document.getElementById('error').style.zIndex = 10;
+            };
         }
       } else {
           message = 'unknown error has occurred';
