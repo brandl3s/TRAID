@@ -109,7 +109,7 @@ function sendData() {
             document.getElementById('commentError').style.opacity = 1;
             document.getElementById('commentError').style.zIndex = 60;
             document.getElementById('commentResubmit').onclick = function () {
-              document.getElementById('commentError').style.opacity = 1;
+              document.getElementById('reactionPage').style.opacity = 1;
               document.getElementById('commentError').style.opacity = 0;
               document.getElementById('commentError').style.zIndex = 10;
             };

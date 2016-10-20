@@ -37,7 +37,6 @@ p {
 
 #emoji-button img {
 	width: 18em;
-	cursor: pointer;
 }
 
 form {
@@ -119,7 +118,6 @@ button#send{
 
 #replay img {
   width: 22px;
-  cursor: pointer;
 }
 
 .credits {
