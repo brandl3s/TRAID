@@ -117,24 +117,20 @@ button#send{
   font-size: 42px;
 }
 
-#replay button {
-  background: none;
-  border:none;
-}
 
 #replay img {
   width: 22px;
   cursor: pointer;
 }
 
-#credits {
-  font-size: 28px;
+.credits {
+  font-size: 26px;
 }
 
 #emojiCredit {
-  padding-top: 2em;
+  padding-top: 4em;
   font-size: 8px;
-  color: #C1C0CF;
+  color: #EDECEC;
 }
 
 #emailResubmit, #commentResubmit {

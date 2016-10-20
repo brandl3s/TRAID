@@ -78,8 +78,9 @@ function sendData() {
         //something should prolly go here
         document.getElementById('reactionPage').style.opacity = 0;
         document.getElementById('success').style.opacity = 1;
-        document.getElementById("replay").onclick = function () {
-            location.href = "..//..//";
+        document.getElementById('success').style.zIndex = 60;
+        document.getElementById('replay').onclick = function () {
+            location.href = "..//screen-saver";
         };
         } else if (msg.Success === 0) {
           //figure out the error
