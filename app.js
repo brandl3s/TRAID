@@ -2,6 +2,5 @@
 console.log("app.js ready to share documentaries");
 
 document.getElementById("homeButton").onclick = function () {
-    location.href = "..//";
+    location.href = "..//film";
 };
-
