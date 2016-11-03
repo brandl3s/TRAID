@@ -75,7 +75,7 @@ form p {
 	display: inline-block;
 }
 
-button#send{
+button#send, button#goBack{
 	font-family: AGBuchCondensedBQRegular, "Impact";
 	margin-top: 20px;
 	background-color: #000000;

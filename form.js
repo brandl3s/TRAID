@@ -5,7 +5,7 @@ var emailField = 'Field3';
 var reactionField = 'Field8';
 var commentField = 'Field2';
 
-document.getElementById('chooseAnotherVideo').onclick = function () {
+document.getElementById('goBack').onclick = function () {
     location.href = "..//";
 };
 
