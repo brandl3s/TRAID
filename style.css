@@ -80,8 +80,8 @@ button#send, button#goBack{
 	margin-top: 20px;
 	background-color: #000000;
 	color: #ffffff;
-	font-size: 1em;
-	height: 1.5em;
+	font-size: 14px;
+	height: 17px;
 	border: none;
 	display: inline-block;
   margin-right: 40%;
