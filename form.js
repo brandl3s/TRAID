@@ -84,7 +84,7 @@ function sendData() {
         document.getElementById('success').style.opacity = 1;
         document.getElementById('success').style.zIndex = 60;
         document.getElementById('replay').onclick = function () {
-            location.href = "..//screen-saver";
+            location.href = "..//choose-a-film";
         };
         } else if (msg.Success === 0) {
           //figure out the error
@@ -133,7 +133,7 @@ function sendData() {
 var timeout;
 
 function goHome() {
-    location.href = '..//screen-saver';
+    location.href = '..//';
     clearTimeout(timeout);
 }
 
