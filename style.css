@@ -118,12 +118,12 @@ button#send, button#goBack{
   font-size: 42px;
 }
 
-#replay, #chooseAnotherVideo img {
+#replay img {
   width: 22px;
 }
 
-#chooseAnotherVideo {
-  padding-top: 18px;
+#goBack {
+  margin-top: 48px !important;
 }
 
 .credits {
