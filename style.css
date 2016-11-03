@@ -14,7 +14,7 @@ a {
 }
 
 p {
-	font-size: 3em;
+	font-size: 40px;
 }
 
 #emoji-button button {
@@ -36,7 +36,8 @@ p {
 }
 
 #emoji-button img {
-	width: 18em;
+	width: 90px;
+	cursor: pointer;
 }
 
 form {
@@ -50,26 +51,26 @@ form {
  	position: relative;
  	display: block;
  	height:auto;
- 	min-height: 30px;
+ 	min-height: 20px;
  	width: 50%;
  	margin-left: auto;
  	margin-right: auto;
  	padding-top:5px;
-	font-size: 17px;
+	font-size: 14px;
 	border: 2px solid #000000;
 }
 
 input {
 	width: 50%;
-	height: 30px;
-	font-size: 17px;
+	height: 20px;
+	font-size: 14px;
 	border: 2px solid #000000;
   font-family: AGBuchCondensedBQRegular, "Impact";
 }
 
 form p {
 	max-width: 50%;
-	font-size: 24px;
+	font-size: 14px;
 	display: inline-block;
 }
 
