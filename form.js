@@ -5,6 +5,10 @@ var emailField = 'Field3';
 var reactionField = 'Field8';
 var commentField = 'Field2';
 
+document.getElementById('chooseAnotherVideo').onclick = function () {
+    location.href = "..//";
+};
+
 // SENDING DATA TO WUFOO & adding emoji 'selected'
 var reset = function() {
   shocked.getElementsByTagName('img')[0].src='../images/emojis/1f62e.png';
@@ -76,7 +80,6 @@ function sendData() {
       // SUCCESS OR ERROR MESSAGE
          console.log(msg);
        if (msg.Success === 1) {
-        //something should prolly go here
         document.getElementById('reactionPage').style.opacity = 0;
         document.getElementById('success').style.opacity = 1;
         document.getElementById('success').style.zIndex = 60;
