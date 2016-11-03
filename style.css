@@ -118,8 +118,12 @@ button#send{
   font-size: 42px;
 }
 
-#replay img {
+#replay, #chooseAnotherVideo img {
   width: 22px;
+}
+
+#chooseAnotherVideo {
+  padding-top: 18px;
 }
 
 .credits {
