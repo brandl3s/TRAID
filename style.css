@@ -168,13 +168,13 @@ button#send, button#goBack{
 }
 
 /*  Background Video 2732 x 2048 */
-#homeButton video {
+video#homeButton {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	/*min-width: 100%;*/
 	/*min-height: 100%;*/
-	width: 800px;
+	width: 50%;
 	/*height: auto;*/
 	z-index: -100;
 	transform: translate(-50%, -50%);
