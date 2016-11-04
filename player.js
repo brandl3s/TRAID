@@ -2,7 +2,7 @@
 console.log("player.js ready to load the video page");
 
 document.getElementById('player').addEventListener('ended',function(){
-     window.location.href = "..//choose-a-film";
+     window.location.href = "..//reaction";
  },false);
 
  // -- Screen Saver Timer --

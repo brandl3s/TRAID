@@ -6,7 +6,7 @@ var reactionField = 'Field8';
 var commentField = 'Field2';
 
 document.getElementById('goBack').onclick = function () {
-    location.href = "..//";
+    location.href = "..//choose-a-film";
 };
 
 // SENDING DATA TO WUFOO & adding emoji 'selected'
