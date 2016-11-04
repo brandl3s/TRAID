@@ -18,18 +18,21 @@ p {
 }
 
 #film-selection {
-  width: 2000px;
-  margin-right: 10%;
-  margin-left: 10%;
+  column-count: 3;
+  column-gap: 0;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .choose {
   background: none;
   border: transparent;
+  display: inline-block;
+  max-height: none;
 }
 
-img.choose {
-  max-width: 100px;
+button.choose {
+  margin: 30px;
 }
 
 #emoji-button button {
