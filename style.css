@@ -17,6 +17,21 @@ p {
 	font-size: 40px;
 }
 
+#film-selection {
+  width: 2000px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.choose {
+  background: none;
+  border: transparent;
+}
+
+img.choose {
+  max-width: 100px;
+}
+
 #emoji-button button {
 	background: none;
 	padding: 15px;
