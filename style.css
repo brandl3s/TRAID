@@ -107,11 +107,12 @@ button#send, button#goBack{
 }
 
 #reactionPage {
-	transition: opacity 1s;
-	z-index: 50;
 	position: absolute;
-	margin-left: 10%;
-  margin-right: 10%;
+	margin-left: auto;
+  margin-right: auto;
+  transition: opacity 1s;
+  width:100%;
+  z-index: 50;
 }
 
 #emojiError, #emailError, #commentError, #success, #response {
