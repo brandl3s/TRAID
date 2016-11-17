@@ -5,8 +5,8 @@
 }
 
 body {
+  font-family: AGBuchCondensedBQRegular, "Impact";
 	text-align: center;
-	font-family: AGBuchCondensedBQRegular, "Impact";
 }
 
 a {
@@ -37,9 +37,9 @@ div.choose {
 
 #emoji-button button {
 	background: none;
-	padding: 15px;
-	border-radius: 50%;
+  border-radius: 50%;
 	border: 4px solid transparent;
+	padding: 15px;
 	transition: .5s border-color;
 }
 
@@ -48,14 +48,14 @@ div.choose {
 }
 
 #emoji-button {
-	padding: .8em 0 .2em 0;
 	margin-left: auto;
   margin-right: auto;
+  padding: .8em 0 .2em 0;
 }
 
 #emoji-button img {
+  cursor: pointer;
 	width: 100px;
-	cursor: pointer;
 }
 
 form {
@@ -66,66 +66,66 @@ form {
 }
 
 #reaction-text {
- 	position: relative;
+  border: 2px solid #000000;
+  border-radius: 5px;
  	display: block;
+  font-size: 14px;
  	height:auto;
- 	min-height: 20px;
- 	width: 50%;
  	margin-left: auto;
  	margin-right: auto;
+  min-height: 20px;
  	padding-top:5px;
-	font-size: 14px;
-	border: 2px solid #000000;
-  border-radius: 5px;
+  position: relative;
+  width: 50%;
 }
 
 input {
-	width: 50%;
-	height: 20px;
-	font-size: 14px;
-	border: 2px solid #000000;
+  border: 2px solid #000000;
   font-family: AGBuchCondensedBQRegular, "Impact";
+	font-size: 14px;
+  height: 20px;
+  width: 50%;
 }
 
 form p {
-	max-width: 50%;
+  display: inline-block;
 	font-size: 14px;
-	display: inline-block;
+  max-width: 50%;
 }
 
 button#send, button#goBack{
-	font-family: AGBuchCondensedBQRegular, "Impact";
-	margin-top: 20px;
-	background-color: #000000;
+  background-color: #000000;
+  border: none;
 	color: #ffffff;
+  display: inline-block;
 	font-size: 14px;
-	height: 17px;
-	border: none;
-	display: inline-block;
+	font-family: AGBuchCondensedBQRegular, "Impact";
+  height: 17px;
+	margin-top: 20px;
   margin-right: 40%;
   margin-left: 40%;
 }
 
 #reactionPage {
-	position: absolute;
 	margin-left: auto;
   margin-right: auto;
+  position: absolute;
   transition: opacity 1s;
   width:100%;
   z-index: 50;
 }
 
 #emojiError, #emailError, #commentError, #success, #response {
-  padding-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   background-color: #ffffff;
   color: #000000;
-  position: absolute;
   left: 50%;
-  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   margin-left: -295px;
+  padding-top: 1em;
+  position: absolute;
+  text-align: center;
+  width: 600px;
   z-index: 10;
 }
 
@@ -150,41 +150,41 @@ button#send, button#goBack{
 }
 
 #emojiCredit {
-  padding-top: 4em;
-  font-size: 8px;
   color: #EDECEC;
+  font-size: 8px;
+  padding-top: 4em;
 }
 
 #emailResubmit, #commentResubmit, #emojiResubmit {
-  font-family: AGBuchCondensedBQRegular, "Impact";
-  margin-top: 20px;
   background-color: #000000;
-  color: #ffffff;
-  font-size: 20px;
-  height: 30px;
   border: none;
+  color: #ffffff;
   display: inline-block;
+  font-size: 20px;
+  font-family: AGBuchCondensedBQRegular, "Impact";
+  height: 30px;
+  margin-top: 20px;
   margin-right: 40%;
   margin-left: 40%;
 }
 
 /*  Background Video 2732 x 2048 */
 video#homeButton {
-	position: fixed;
-	top: 50%;
+  height: 100%;
 	left: 50%;
-	/*min-width: 100%;
-	min-height: 100%;*/
-	width: 100%;
-	height: 100%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 	z-index: -100;
-	transform: translate(-50%, -50%);
+  /*min-width: 100%;
+  min-height: 100%;*/
 }
 
 video#player {
-	top:50%;
+  height: auto;
 	position: fixed;
-	width: 1000px;
-	height: auto;
+  top:50%;
 	transform: translate(-50%, -50%);
+  width: 1000px;
 }
