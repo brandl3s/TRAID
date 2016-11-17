@@ -1,16 +1,18 @@
 //if this file is linked properly, then the console will print out "app.js ready to share documentaries"
 console.log("app.js ready to share documentaries");
 
-var chooseAFilm = function() {
-  console.log('hello')
-  location.href = "choose-a-film";
+var goChooseAFilm = function() {
+  location.href = "choose-a-film/index.html";
 };
 
-var homeButton = document.getElementById("homeButton");
-homeButton.addEventListener('click', chooseAFilm);
+var homeButton = document.getElementById("intro-video");
+homeButton.addEventListener('click', goChooseAFilm);
+
+var homeButton2 = document.getElementById("back-to-choose");
+homeButton2.addEventListener('click', goChooseAFilm);
 
 var anotherButton = document.getElementById("another-button");
-anotherButton.addEventListener('click', chooseAFilm);
+anotherButton.addEventListener('click', goChooseAFilm);
 
 var app = {
     // Application Constructor
@@ -28,7 +30,7 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-       
+
     }
 };
 
