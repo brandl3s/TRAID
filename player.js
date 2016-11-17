@@ -6,13 +6,9 @@ console.log("player.js ready to load the video page");
 var player = document.getElementById('player');
 if (player) {
   player.addEventListener('ended',function(){
-       window.location.href = "../reaction";
+       window.location.href = "../../reaction";
    }, false);
 }
-
-
-
-
 
  // -- Screen Saver Timer --
  var timeout;

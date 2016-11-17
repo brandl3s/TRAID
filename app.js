@@ -2,17 +2,18 @@
 console.log("app.js ready to share documentaries");
 
 var goChooseAFilm = function() {
-  location.href = "choose-a-film/index.html";
+  location.href = "../choose-a-film/index.html";
 };
 
 var homeButton = document.getElementById("intro-video");
 homeButton.addEventListener('click', goChooseAFilm);
 
-var homeButton2 = document.getElementById("back-to-choose");
-homeButton2.addEventListener('click', goChooseAFilm);
+var goToChooseAFilm = function() {
+  location.href = "../../choose-a-film/index.html";
+};
 
-var anotherButton = document.getElementById("another-button");
-anotherButton.addEventListener('click', goChooseAFilm);
+var homeButton2 = document.getElementById("back-to-choose");
+homeButton2.addEventListener('click', goToChooseAFilm);
 
 var app = {
     // Application Constructor

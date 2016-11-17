@@ -61,8 +61,6 @@ div.choose {
 form {
 	display: inline-block;
 	margin: .5em 0 .5em 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #reaction-text {
@@ -169,7 +167,7 @@ button#send, button#goBack{
 }
 
 /*  Background Video 2732 x 2048 */
-video#homeButton {
+video#intro-video {
   height: 100%;
 	left: 50%;
   position: fixed;
